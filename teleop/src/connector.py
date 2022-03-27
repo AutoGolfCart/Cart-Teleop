@@ -30,7 +30,7 @@ class Teleop_Connector:
         self.keystroke_logger.addHandler(keystroke_file_handler)
 
         # Cart Response Logger
-        self.response_logger = logging.getLogger("response_log")
+        self.response_logger = logging.getLogger("responses")
         self.response_logger.setLevel(logging.DEBUG)
 
         response_file_handler = logging.FileHandler("responses.log")
