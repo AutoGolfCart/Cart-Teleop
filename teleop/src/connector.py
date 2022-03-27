@@ -125,7 +125,7 @@ class Teleop_Connector:
 
     # Listens for log info from the server
     def log_listener(self):
-        # Accept Connectiond
+        # Accept Connections
         self.logging_socket.listen()
 
         while not self.kill:
