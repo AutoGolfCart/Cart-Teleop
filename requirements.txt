@@ -3,3 +3,4 @@ threading
 sockets
 logging
 time
+pyfiglet
