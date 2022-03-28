@@ -15,7 +15,7 @@ from src.connector import Teleop_Connector
 controller = Gamepad()
 
 # Connector
-connector = Teleop_Connector(ip_addr=str(sys.argv[0]),establish_port=69420, command_port=69, log_port=420, response_port=777)
+connector = Teleop_Connector(ip_addr=str(sys.argv[0]),establish_port=42069, command_port=69, log_port=420, response_port=777)
 
 # Init
 def init():

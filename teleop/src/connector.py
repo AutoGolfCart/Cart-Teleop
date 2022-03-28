@@ -16,7 +16,7 @@ import src.util as util
 
 class Teleop_Connector:
 
-    def __init__(self, ip_addr, establish_port, command_port, log_port, response_port):
+    def __init__(self, ip_addr, establish_port=42069, command_port=69, log_port=420, response_port=777):
         # Create Ports
         self.logging_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.response_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
