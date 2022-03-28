@@ -41,7 +41,7 @@ class Teleop_Connector:
         response_console_handler.setFormatter("%(asctime)s - %(name)s - %(message)s")
         self.response_logger.addHandler(response_console_handler)
 
-        # Cart Response Logger
+        # Cart Log Message Logger
         self.logger = logging.getLogger("log")
         self.logger.setLevel(logging.DEBUG)
 
