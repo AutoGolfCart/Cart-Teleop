@@ -126,6 +126,7 @@ class Teleop_Connector:
     # Listens for log info from the server
     def log_listener(self):
         # Accept Connections
+        self.logging_socket.bind(("", self.log_port))
         self.logging_socket.listen()
 
         while not self.kill:
@@ -139,6 +140,7 @@ class Teleop_Connector:
     # Listens for repsonses from the server
     def response_lister(self):
         # Accept Connections
+        self.response_socket.bind(("", self.response_port))
         self.response_socket.listen()
 
         while not self.kill:
